@@ -1,0 +1,56 @@
+<doctype html>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<html>
+<head>
+<script type="text/javascript">
+var count = 1; 
+var pic=new Array('11a.png','11b.png','11c.png','12a.png','12b.png','12c.png','13a.png','13b.png','13c.png');
+//где а-большой рисунок; b-маленький цветной рисунок; c-маленький черно-белый рисунок.
+ 
+   i=0; colpic=3;j=0;
+  function change(i)
+  {
+  j=(count+i-1)%colpic; 
+  document.all.main.src=pic[j*colpic]; 
+  }
+  function change1(i)
+  {
+  j=(count+i-1)%colpic; 
+  event.srcElement.src=pic[j*colpic+1]; 
+  }
+  function change2(i)
+  {
+  j=(count+i-1)%colpic; 
+  event.srcElement.src=pic[j*colpic+2]; 
+  }
+
+var count = 0;
+ 
+var imgslide =new Array('11c.png','12c.png','13c.png');
+ 
+function dem(flag) {
+    if(flag) {
+        count++;
+        if(count > colpic-1) count = 0;
+    } else {
+        count--;
+        if(count <= 0) count = colpic-1;
+    }
+ 
+    document.all.img1.src = imgslide[count%colpic]; 
+    document.all.img2.src = imgslide[(count+1)%colpic];
+    document.all.img3.src = imgslide[(count+2)%colpic];
+}
+</script>
+</head>
+<body>
+<div align="center">
+<img src="11a.png" id="main"> <br>
+<img src="left.png" onClick="dem(false)">
+<img src="11c.png" Id="img1"  border="1" onclick="change(1)" onmouseover="change1(1)" onmouseout="change2(1)"> 
+<img src="12c.png" Id="img2"  border="1" onclick="change(2)" onmouseover="change1(2)" onmouseout="change2(2)"> 
+<img src="13c.jng" Id="img3"  border="1" onclick="change(3)" onmouseover="change1(3)" onmouseout="change2(3)"> 
+<img src="right.png" onClick="dem(true)">
+</div>
+</body>
+</html>
