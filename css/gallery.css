@@ -1,0 +1,12 @@
+.hovergallery img{
+-webkit-transform:scale(0.8); /* Уменьшение размера изображений */
+-webkit-transition-duration: 0.5s; /* Длительность анимации*/
+opacity: 0.7; /* Начальная непрозрачность изображений */
+margin: 0 5px 5px 5px; /* Отступы от верхнего, правого, нижнего и левого краев  */
+}
+
+.hovergallery img:hover{
+-webkit-transform:scale(1.1); /* Увеличение размера изображения */
+box-shadow:0px 0px 40px gray; /* Тень */
+opacity: 1 /* Конечная непрозрачность изображений */;
+}

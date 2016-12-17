@@ -1,0 +1,192 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+* {
+font-family: Tahoma; /* Тип шрифта */
+color: white; /* Цвет шрифта */
+}
+
+
+/* Тело */
+body{ 
+	margin: 0; /* Отступы */
+	background: url('../Images/Other/Фон задний 4.jpg'); /* Фон */
+	background-attachment: fixed; /* Прокрутка фона */
+} 
+
+
+/* Основа для всех блоков */
+div#page{
+	width: 800px; /* Ширина */
+	left: 18%; /* Отступ слева */
+	position: absolute; /* Позиционирование */
+} 
+
+
+/* Логотип */
+
+.header{
+	background: url('../Images/Other/Логотип1.png'); /* Фон */
+	display: block; /* Отображение */
+	height: 200px; /* Высота */
+    position: relative; /* Позиционирование */
+}
+
+
+
+
+/* Меню  */
+div.menu {
+	margin-top: 10px;  /* Отступ сверху  */
+	margin-left: -195px; /* Отступ слева  */
+	width: 800px; /* Ширина */
+	position: fixed
+	}
+
+/* Стиль кнопок меню  */
+a.button1{background: url('../Images/Buttons/Главная.png'); /* Фон */ top:0; /* Отступ сверху */} 
+a.button1:hover{background: url('../Images/Buttons/Главная2.png'); /* Фон */} 
+div.button1a{background: url('../Images/Buttons/Главная2.png'); /* Фон */ top:0; /* Отступ сверху */} 
+
+a.button2{background: url('../Images/Buttons/Назначение.png'); /* Фон */ top:55; /* Отступ сверху */} 
+a.button2:hover{background: url('../Images/Buttons/Назначение2.png'); /* Фон */} 
+div.button2a{background: url('../Images/Buttons/Назначение2.png'); /* Фон */ top:55; /* Отступ сверху */} 
+
+a.button3{background: url('../Images/Buttons/Топология.png'); /* Фон */ top:110; /* Отступ сверху */}
+a.button3:hover{background: url('../Images/Buttons/Топология2.png'); /* Фон */}
+div.button3a{background: url('../Images/Buttons/Топология2.png'); /* Фон */ top:110; /* Отступ сверху */} 
+
+a.button4{background: url('../Images/Buttons/Видео.png'); /* Фон */ top:165; /* Отступ сверху */}
+a.button4:hover{background: url('../Images/Buttons/Видео2.png'); /* Фон */}
+div.button4a{background: url('../Images/Buttons/Видео2.png'); /* Фон */ top:165; /* Отступ сверху */}
+
+a.button5{background: url('../Images/Buttons/Виды.png'); /* Фон */ top:220; /* Отступ сверху */}
+a.button5:hover{background: url('../Images/Buttons/Виды2.png'); /* Фон */} 
+div.button5a{background: url('../Images/Buttons/Виды2.png'); /* Фон */ top:220; /* Отступ сверху */} 
+
+a.button6{background: url('../Images/Buttons/Галерея.png'); /* Фон */ top:275; /* Отступ сверху */} 
+a.button6:hover{background: url('../Images/Buttons/Галерея2.png'); /* Фон */}
+div.button6a{background: url('../Images/Buttons/Галерея2.png'); /* Фон */ top:275; /* Отступ сверху */}  
+
+a.button1, a.button2, a.button3, a.button4, a.button5,a.button6{
+	display: block; /* Отображение; */
+	width: 160px; /* Ширина */
+	height: 50px; /* Высота */
+	position: absolute; /* Позиционирование */
+} 
+
+div.button1a, div.button2a, div.button3a, div.button4a, div.button5a, div.button6a{
+	display: block; /* Отображение; */
+	width: 160px; /* Ширина */
+	height: 50px; /* Высота */
+	position: absolute; /* Позиционирование */
+} 
+
+
+/* Блок с основным содержимым */
+div.content, div.contentm, div.contentg{
+	margin-top: 10px; /* Отступ сверху */
+	background: url('../Images/Other/Фон.png'); /* Фон */
+	text-align: justify; /* Выравнивание текста по ширине */
+} 
+div.contentm{
+	height: 429px  /* Высота */
+} 
+div.contentg{
+	height: 730px  /* Высота */
+} 
+
+/* Отступы для содержимого контента*/
+div.indent{
+	padding: 10px; /* Внутренние отступы */
+	margin: 10px; /* Отступы */
+} 
+
+
+/* Обтекание картинки слева и справа */
+img.left{float:left; /* Обтекание слева */} 
+img.right{float:right; /* Обтекание справа */}
+img.left, img.right {margin: 5px 7px 7px 0; /* Отступы */}
+
+
+/* Дополнительная информация */
+
+div.footerm, div.footerg{
+	margin-top: 20px  /* Отступ сверху */
+} 
+
+div.footer, div.footerm, div.footerg {
+	height:70px; /* Высота */
+	background:url('../Images/Other/Логотип2.png'); /* Фон */
+
+
+
+*, *:before, *:after{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+    
+/*| Navigation |*/
+
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 3px 10px -2px rgba(0,0,0,.1);
+  border: 1px solid rgba(0,0,0,.1);
+}
+  nav ul{
+    list-style: none;
+    position: relative;
+    float: right;
+    margin-right: 100px;
+    display: inline-table;
+  }
+    nav ul li{
+      float: left;
+      -webkit-transition: all .2s ease-in-out;
+      -moz-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
+    }
+
+    nav ul li:hover{background: rgba(0,0,0,.15);}
+    nav ul li:hover > ul{display: block;}
+    nav ul li{
+      float: left;
+      -webkit-transition: all .2s ease-in-out;
+      -moz-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
+    }
+      nav ul li a{
+        display: block; 
+        padding: 30px 20px;
+        color: #222; 
+        font-size: .9em;
+        letter-spacing: 1px;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+      nav ul ul{
+        display: none;
+        background: #fff;
+        position: absolute; 
+        top: 100%;
+        box-shadow: -3px 3px 10px -2px rgba(0,0,0,.1);
+        border: 1px solid rgba(0,0,0,.1);
+      }
+        nav ul ul li{float: none; position: relative;}
+          nav ul ul li a {
+            padding: 15px 30px; 
+            border-bottom: 1px solid rgba(0,0,0,.05);
+          }
+          nav ul ul ul {
+            position: absolute; 
+            left: 100%; 
+            top:0;
+          }	

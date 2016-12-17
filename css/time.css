@@ -1,0 +1,12 @@
+div.clock{
+	font-size: 50px; /* Размер шрифта */
+	color: #E8E8E8; /* Цвет */
+	opacity: 0.5; /* Прозрачность */
+	font-weight: 700; /* Насыщенность шрифта */
+	background-color: transparent; /* Цвет фона */
+	margin-left: -180px; /* Отступ слева */
+	margin-top: 570.5px; /* Отступ сверху */
+	position: fixed; /* Позиционирование */
+	cursor: default; /* Вид курсора */
+	font-family: arial; /* Тип шрифта */
+}
